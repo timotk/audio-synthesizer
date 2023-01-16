@@ -1,0 +1,7 @@
+numpy==1.24.1
+matplotlib==3.6.2
+streamlit==1.16.0
+scipy==1.10.0
+pandas==1.5.2
+mido==1.2.10
+jupyterlab==3.5.2
