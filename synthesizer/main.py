@@ -6,6 +6,7 @@ st.set_page_config(layout="wide")
 
 SAMPLE_RATE = 44_100
 
+
 # Helper function so we can play np.ndarray as audio
 def convert_to_audio(y):
     y *= 32767 / np.max(np.abs(y))
@@ -15,6 +16,7 @@ def convert_to_audio(y):
 
 st.title("Synthesizer")
 col1, col2, col3, col4 = st.columns(4)
+
 
 with col1:
     st.header("Oscillator")
