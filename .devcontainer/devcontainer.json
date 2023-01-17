@@ -1,0 +1,21 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "portsAttributes": {
+        "8501": {
+            "label": "Streamlit",
+            "onAutoForward": "notify"
+        },
+        "8888": {
+            "label": "Jupyter Lab",
+            "onAutoForward": "notify"
+        }
+    },
+    "remoteUser": "nonroot",
+    "forwardPorts": [
+        8501,
+        8888
+    ]
+}
